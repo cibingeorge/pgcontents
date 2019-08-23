@@ -2,8 +2,8 @@
 Utilities for managing compat between notebook versions.
 """
 import notebook
-if notebook.version_info[0] >= 6:  # noqa
-    raise ImportError("Jupyter Notebook versions 6 and up are not supported.")
+if notebook.version_info[0] >= 8:  # noqa
+    raise ImportError("Jupyter Notebook versions 8 and up are not supported.")
 
 from traitlets.config import Config
 from notebook.services.contents.checkpoints import (
